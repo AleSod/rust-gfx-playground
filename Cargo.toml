@@ -1,0 +1,6 @@
+[package]
+name = "volda"
+version = "0.1.0"
+authors = ["thiefster"]
+
+[dependencies]
