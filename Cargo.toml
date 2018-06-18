@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["thiefster"]
 
 [dependencies]
+gfx = "0.17"
+glutin = "0.12"
+gfx_window_glutin = "0.20"
