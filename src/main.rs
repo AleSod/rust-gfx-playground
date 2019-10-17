@@ -53,10 +53,13 @@ pub fn main() {
     ).unwrap();
 
     let mut encoder: gfx::Encoder<_, _> = factory.create_command_buffer().into();
-    const TRIANGLE: [Vertex; 3] = [
-        Vertex { pos: [ -0.5, -0.5, 0.0, 1.0 ], color: [1.0, 0.0, 0.0] },
-        Vertex { pos: [  0.5, -0.5, 0.0, 1.0 ], color: [0.0, 1.0, 0.0] },
-        Vertex { pos: [  0.0,  0.5, 0.0, 1.0 ], color: [0.0, 0.0, 1.0] },
+    const TRIANGLE: [Vertex; 6] = [
+        Vertex { pos: [ -0.2, -0.5, 0.0, 1.0 ], color: [1.0, 0.0, 0.0] },
+        Vertex { pos: [ -0.8, -0.5, 0.0, 1.0 ], color: [0.0, 1.0, 0.0] },
+        Vertex { pos: [ -0.5,  0.5, 0.0, 1.0 ], color: [0.0, 0.0, 1.0] },
+        Vertex { pos: [  0.2, -0.5, 0.0, 1.0 ], color: [1.0, 0.0, 0.0] },
+        Vertex { pos: [  0.8, -0.5, 0.0, 1.0 ], color: [0.0, 1.0, 0.0] },
+        Vertex { pos: [  0.5,  0.5, 0.0, 1.0 ], color: [0.0, 0.0, 1.0] },
     ];
     //Identity Matrix
     const TRANSFORM: Transform = Transform {
